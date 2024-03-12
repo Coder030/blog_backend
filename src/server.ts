@@ -9,7 +9,11 @@ import { createNewUser, signin } from "./user";
 export const app = express();
 const corsOptions = {
   credentials: true,
-  origin: ["http://localhost:3001", "http://localhost:3000"],
+  origin: [
+    "http://localhost:3001",
+    "http://localhost:3000",
+    "https://blogger-tan.vercel.app",
+  ],
 };
 
 app.use(cors(corsOptions));
